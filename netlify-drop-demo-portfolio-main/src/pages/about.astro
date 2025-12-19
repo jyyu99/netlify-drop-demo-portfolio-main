@@ -1,0 +1,148 @@
+---
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About | Amir Jayousi" description="About Amir Jayousi">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/office.png"
+					alt="Amir Jayousi at work with a colleague"
+				/>
+			</Hero>
+
+			<section>
+	<h2 class="section-title">Background</h2>
+	<div class="content">
+		<p>
+			I am a Data Analyst with a strong foundation in data analysis and business intelligence.
+			I hold a BSc in Information Systems, where I developed
+			a solid understanding of how data can be collected, analyzed, and translated into
+			actionable insights.
+		</p>
+
+		<p>
+			My work focuses on using SQL, Power BI, and Databricks to explore data, build reliable
+			data models, and create dashboards that clearly communicate insights to both technical
+			and non-technical stakeholders.
+		</p>
+
+		<p>
+			Through academic and hands-on projects, I have worked on real-world datasets in domains
+			such as healthcare and business analytics. I enjoy solving problems with data and am
+			motivated by roles where analytics directly supports better decision-making.
+		</p>
+
+		<p>
+			In addition to academic projects, I have hands-on professional experience as a Data Analyst,
+			working with production data to deliver insights and reporting solutions for business needs.
+		</p>
+
+	</div>
+</section>
+
+<section>
+	<h2 class="section-title">Education</h2>
+	<div class="content">
+		<p>
+			<strong>BSc in Information Systems (Data Science specialization)</strong><br />
+			Focused on data analysis, databases, statistics, and business intelligence.
+		</p>
+
+		<p>
+			During my studies, I completed analytical projects involving data exploration,
+			statistical analysis, and predictive modeling, gaining practical experience with
+			real-world datasets.
+		</p>
+	</div>
+</section>
+
+<section>
+	<h2 class="section-title">Skills</h2>
+	<div class="content">
+		<p>
+			<strong>Data Analysis & BI:</strong> SQL, Python, Power BI, Excel
+		</p>
+
+		<p>
+			<strong>Data Platforms:</strong> Azure, Databricks
+		</p>
+
+		<p>
+			<strong>Analytics & Tools:</strong> Data modeling, dashboard design, data cleaning,
+			exploratory data analysis (EDA), statistical thinking
+		</p>
+	</div>
+</section>
+
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
