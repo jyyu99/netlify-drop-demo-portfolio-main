@@ -13,7 +13,7 @@ tags:
   - Shiny
 ---
 
-### Project Overview
+#### Project Overview
 
 The **Heart Disease Prediction App** is an interactive data application built in **R** that predicts the likelihood of heart disease based on user-provided health indicators.  
 In addition to risk prediction, the app generates **personalized lifestyle recommendations** aimed at improving heart health.
@@ -22,7 +22,7 @@ The project demonstrates how data analysis and predictive modeling can be transl
 
 ---
 
-### Application Features
+#### Application Features
 
 - Predicts heart disease likelihood based on medical and demographic inputs
 - Provides personalized lifestyle recommendations tailored to the prediction results
@@ -30,7 +30,7 @@ The project demonstrates how data analysis and predictive modeling can be transl
 
 ---
 
-### Data & Inputs
+#### Data & Inputs
 
 The application uses health-related features such as:
 - Age
@@ -46,7 +46,7 @@ These inputs are processed to generate predictions and recommendations.
 
 ---
 
-### Modeling & Logic
+#### Modeling & Logic
 
 - Data preprocessing and feature handling implemented in **R**
 - Predictive logic based on statistical / machine learning techniques
@@ -55,7 +55,7 @@ These inputs are processed to generate predictions and recommendations.
 
 ---
 
-### Tools & Technologies
+#### Tools & Technologies
 
 - **R**
 - **Shiny** – Interactive web application framework  
@@ -64,7 +64,7 @@ These inputs are processed to generate predictions and recommendations.
 
 ---
 
-### Outcome
+#### Outcome
 
 The final result is a functional web application that:
 - Allows users to assess heart disease risk
@@ -76,7 +76,7 @@ The final result is a functional web application that:
 
 ---
 
-### What I Learned
+#### What I Learned
 
 - Building interactive data applications using R and Shiny
 - Applying predictive analytics in a healthcare context

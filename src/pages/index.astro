@@ -145,11 +145,24 @@ const projects = (await getCollection('work'))
 	}
 
 	.roles {
-		display: none;
-	}
+    /* Change 'none' to 'flex' to make them visible */
+    display: flex; 
+    
+    /* This ensures they don't go off-screen on phones */
+    flex-wrap: wrap; 
+    
+    /* Adds spacing between the tags */
+    gap: 0.5rem;
+    
+    /* Centers the tags on the screen */
+    justify-content: center;
+    
+    /* Adds some space between the text above and the tags */
+    margin-top: 1rem;
+}
 
 	.hero img {
-		aspect-ratio: 5 / 4;
+		aspect-ratio: 3/4;
 		object-fit: cover;
 		object-position: top;
 		border-radius: 1.5rem;
@@ -302,7 +315,7 @@ const projects = (await getCollection('work'))
 	.tech-card-large img {
 		width: 4rem;
 		height: 4rem;
-		transform: scale(2.5);
+		transform: scale(2.25);
 	}
 
 	@media (min-width: 50em) {

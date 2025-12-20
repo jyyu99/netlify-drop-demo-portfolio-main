@@ -12,5 +12,20 @@
 		font-size: var(--text-md);
 		line-height: 1.35;
 		white-space: nowrap;
+
+		/* Mobile First: Smaller size */
+		padding: 4px 12px; 
+		font-size: 13px;
+		line-height: 1.2;
 	}
+
+	/* Scale up for Desktop */
+	@media (min-width: 50em) {
+		.pill {
+			padding: 0.5rem 1rem;
+			font-size: 1rem;
+		}
+	}
+
+
 </style>

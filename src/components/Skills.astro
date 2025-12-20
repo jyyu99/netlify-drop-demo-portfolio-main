@@ -4,7 +4,6 @@ import Icon from './Icon.astro';
 
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="database" color="var(--accent-regular)" size="2.5rem" gradient />
 		<h2>Data Analytics</h2>
 		<p>
 			Skilled in data cleaning, modeling, and analysis using SQL and analytical
@@ -13,7 +12,6 @@ import Icon from './Icon.astro';
 	</div>
 
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="chart-line" color="var(--accent-regular)" size="2.5rem" gradient />
 		<h2>Business Intelligence</h2>
 		<p>
 			Building interactive dashboards and reports using Power BI and SQL to support
@@ -22,7 +20,6 @@ import Icon from './Icon.astro';
 	</div>
 
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="cloud" color="var(--accent-regular)" size="2.5rem" gradient />
 		<h2>Cloud & Data Platforms</h2>
 		<p>
 			Hands-on experience with Azure and Databricks for data transformation,
@@ -52,8 +49,10 @@ import Icon from './Icon.astro';
 	}
 
 	.skills p {
-		color: var(--gray-400);
-	}
+    color: var(--gray-400);
+    line-height: 1.5; /* Makes the paragraph easier to read */
+    margin-top: auto; /* Optional: pushes text to align at the bottom if headers vary in length */
+}
 
 	@media (min-width: 50em) {
 		.box {
