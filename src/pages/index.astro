@@ -25,30 +25,6 @@ const projects = (await getCollection('work'))
 <BaseLayout>
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
-			<header class="hero">
-				<Hero
-					title="Hello, my name is Amir Jayousi"
-					tagline="I’m a certified Data Analyst with a strong foundation in analytics, visualization, and cloud data tools."
-					align="start"
-				>
-					<div class="roles">
-						<Pill><img src="/assets/svg/8921081-removebg-preview.png" alt="Data Analyst" style="width:1.33em;height:1.33em;object-fit:contain;vertical-align:middle;" /> Data Analyst</Pill>
-						<Pill><Icon icon="sql" size="1.33em" /> SQL & Databases</Pill>
-						<Pill><img src="/assets/svg/2328966-removebg-preview.png" style="width:1.33em;height:1.33em;object-fit:contain;vertical-align:middle;" /> BI & Dashboards</Pill>
-					</div>
-
-				</Hero>
-
-				<img
-					alt="Amir Jayousi smiling in a white shirt"
-					width="480"
-					height="620"
-					src="/assets/amir.jpg"
-				/>
-			</header>
-
-			<Skills />
-		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
@@ -76,6 +52,37 @@ const projects = (await getCollection('work'))
 					</CallToAction>
 				</div>
 			</section>
+
+
+
+
+
+			<header class="hero">
+				<Hero
+					title="Hello, my name is Amir Jayousi"
+					tagline="I’m a certified Data Analyst with a strong foundation in analytics, visualization, and cloud data tools."
+					align="start"
+				>
+					<div class="roles">
+						<Pill><img src="/assets/svg/8921081-removebg-preview.png" alt="Data Analyst" style="width:1.33em;height:1.33em;object-fit:contain;vertical-align:middle;" /> Data Analyst</Pill>
+						<Pill><Icon icon="sql" size="1.33em" /> SQL & Databases</Pill>
+						<Pill><img src="/assets/svg/2328966-removebg-preview.png" style="width:1.33em;height:1.33em;object-fit:contain;vertical-align:middle;" /> BI & Dashboards</Pill>
+					</div>
+
+				</Hero>
+
+				<img
+					alt="Amir Jayousi smiling in a white shirt"
+					width="480"
+					height="620"
+					src="/assets/amir.jpg"
+				/>
+			</header>
+
+			<Skills />
+		</div>
+
+		
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
